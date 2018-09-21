@@ -5,7 +5,7 @@
     "lerna": "^3.4.0"
   },
   "scripts": {
-    "dev": "lerna run dev --parallel --scope @bmd/cms-starfish"
+    "dev": "lerna run dev --parallel --scope \"@bmd/{cms-starfish,apa}\""
   },
   "workspaces": [
     "packages/*"
