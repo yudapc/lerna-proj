@@ -5,7 +5,8 @@
     "lerna": "^3.4.0"
   },
   "scripts": {
-    "dev": "lerna run dev --parallel --scope \"@bmd/{cms-starfish,apa}\""
+    "dev": "lerna run dev --parallel --scope \"@bmd/{cms-starfish,apa}\"",
+    "test": "cd packages/components && CI=true npm test"
   },
   "workspaces": [
     "packages/*"
