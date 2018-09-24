@@ -7,17 +7,18 @@
   },
   "dependencies": {
     "@blueprintjs/core": "^3.6.0",
+    "@bmd/components": "1.0.0",
+    "antd": "^3.9.3",
     "axios": "^0.18.0",
-    "react": "^16.5.0",
-    "react-dom": "^16.5.0",
+    "react": ">=16.0.0",
+    "react-dom": ">=16.0.0",
     "react-redux": "^5.0.7",
     "react-router": "^4.3.1",
     "react-transition-group": "^2.4.0",
     "redux": "^4.0.0",
     "redux-axios-middleware": "^4.0.0",
     "rxjs": "^6.3.2",
-    "typescript": "^3.0.3",
-    "@bmd/components": "1.0.0"
+    "typescript": "^3.0.3"
   },
   "devDependencies": {
     "@types/moment-timezone": "^0.5.9",
