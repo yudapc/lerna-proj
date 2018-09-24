@@ -7,7 +7,7 @@ cache:
   - yarn
 
 install:
-  - npm ci
+  - npm install
 
 script:
   - npm test
