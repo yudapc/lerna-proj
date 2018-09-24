@@ -8,8 +8,7 @@ cache:
 
 install:
   - npm install
-  - cd packages/components
-  - npm install
+  - npm install --prefix packages/components
 
 script:
   - npm test
