@@ -1,1 +1,3 @@
-export { Breadcrumb } from "antd";
+import { Breadcrumb } from "antd";
+const BreadcrumbItem = Breadcrumb.Item;
+export { Breadcrumb, BreadcrumbItem };
