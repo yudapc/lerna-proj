@@ -1,4 +1,4 @@
-import { Icon, Menu, SubMenu } from "@bmd/components";
+import { Icon, Menu, MenuItem, SubMenu } from "@bmd/components";
 import * as React from "react";
 
 export class MenuSidebarComponent extends React.Component {
@@ -21,18 +21,18 @@ export class MenuSidebarComponent extends React.Component {
         theme="dark"
         inlineCollapsed={this.state.collapsed}
       >
-        <Menu.Item key="1">
+        <MenuItem key="1">
           <Icon type="pie-chart" />
           <span>Option 1</span>
-        </Menu.Item>
-        <Menu.Item key="2">
+        </MenuItem>
+        <MenuItem key="2">
           <Icon type="desktop" />
           <span>Option 2</span>
-        </Menu.Item>
-        <Menu.Item key="3">
+        </MenuItem>
+        <MenuItem key="3">
           <Icon type="inbox" />
           <span>Option 3</span>
-        </Menu.Item>
+        </MenuItem>
         <SubMenu
           key="sub1"
           title={
@@ -42,10 +42,10 @@ export class MenuSidebarComponent extends React.Component {
             </span>
           }
         >
-          <Menu.Item key="5">Option 5</Menu.Item>
-          <Menu.Item key="6">Option 6</Menu.Item>
-          <Menu.Item key="7">Option 7</Menu.Item>
-          <Menu.Item key="8">Option 8</Menu.Item>
+          <MenuItem key="5">Option 5</MenuItem>
+          <MenuItem key="6">Option 6</MenuItem>
+          <MenuItem key="7">Option 7</MenuItem>
+          <MenuItem key="8">Option 8</MenuItem>
         </SubMenu>
         <SubMenu
           key="sub2"
@@ -56,11 +56,11 @@ export class MenuSidebarComponent extends React.Component {
             </span>
           }
         >
-          <Menu.Item key="9">Option 9</Menu.Item>
-          <Menu.Item key="10">Option 10</Menu.Item>
+          <MenuItem key="9">Option 9</MenuItem>
+          <MenuItem key="10">Option 10</MenuItem>
           <SubMenu key="sub3" title="Submenu">
-            <Menu.Item key="11">Option 11</Menu.Item>
-            <Menu.Item key="12">Option 12</Menu.Item>
+            <MenuItem key="11">Option 11</MenuItem>
+            <MenuItem key="12">Option 12</MenuItem>
           </SubMenu>
         </SubMenu>
       </Menu>
