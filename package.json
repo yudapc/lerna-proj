@@ -6,7 +6,7 @@
   },
   "scripts": {
     "dev": "lerna run dev --parallel --scope \"@bmd/{cms-starfish,apa}\"",
-    "test": "cd packages/components && CI=true npm test"
+    "test": "CI=true npm test --prefix packages/components"
   },
   "workspaces": [
     "packages/*"
