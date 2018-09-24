@@ -11,7 +11,7 @@
   "scripts": {
     "start": "react-scripts-ts start",
     "build": "react-scripts-ts build",
-    "test": "react-scripts-ts test --env=jsdom"
+    "test": "./node_modules/.bin/react-scripts-ts test --env=jsdom"
   },
   "devDependencies": {
     "@types/jest": "^23.3.2",
