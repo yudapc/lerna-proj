@@ -13,6 +13,5 @@ Open on browser: `http://localhost:1234`
 ### Run test sharing components:
 
 ```
-$ cd packages/components
-$ npm test a
+$ npm test
 ```
