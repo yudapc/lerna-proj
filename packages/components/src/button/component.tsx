@@ -1,17 +1,9 @@
+import { Button } from "antd";
 import * as React from "react";
 
-interface Iprops {
-  text?: string;
-  className?: string;
-  data?: string;
-  id?: string;
-  key?: string;
-  onClick?: any;
-}
-
-export class ButtonComponent extends React.Component<Iprops, any> {
+export class ButtonComponent extends React.Component<any, any> {
   public render() {
-    return <button {...this.props}>{this.props.text}</button>;
+    return <Button {...this.props} />;
   }
 }
 
