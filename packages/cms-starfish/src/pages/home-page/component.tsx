@@ -24,8 +24,8 @@ export class HomePageComponent extends React.Component<any, any> {
             <MenuSidebar />
           </Sider>
           <Content>
-            <Breadcrumb />
             <div style={{ padding: 16 }}>
+              <Breadcrumb />
               <h1>Home Page</h1>
               <div>
                 <p>
