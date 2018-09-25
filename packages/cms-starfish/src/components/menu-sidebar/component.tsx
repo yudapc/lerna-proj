@@ -1,5 +1,6 @@
 import { Icon, Menu, MenuItem, SubMenu } from "@bmd/components";
 import * as React from "react";
+import { styles } from "./styles";
 
 export class MenuSidebarComponent extends React.Component {
   state = {
@@ -20,6 +21,7 @@ export class MenuSidebarComponent extends React.Component {
         mode="inline"
         theme="dark"
         inlineCollapsed={this.state.collapsed}
+        style={styles.container}
       >
         <MenuItem key="1">
           <Icon type="pie-chart" />
