@@ -1,8 +1,6 @@
 import * as React from "react";
 import {
-  Button,
   Dropdown,
-  Icon,
   Content,
   Footer,
   Header,
@@ -11,6 +9,9 @@ import {
 } from "@bmd/components";
 import { MenuSidebar } from "../../components/menu-sidebar";
 import { Breadcrumb } from "../../components/breadcrumb";
+import { TableSample } from "./libraries/TableSample";
+import ButtonSample from "@bmd/cms-starfish/src/pages/home-page/libraries/ButtonSample";
+import IconSample from "@bmd/cms-starfish/src/pages/home-page/libraries/IconSample";
 
 export class HomePageComponent extends React.Component<any, any> {
   render() {
@@ -27,30 +28,12 @@ export class HomePageComponent extends React.Component<any, any> {
             <div style={{ padding: 16 }}>
               <Breadcrumb />
               <h1>Home Page</h1>
-              <div>
-                <p>
-                  <span>Sample Icon:</span>
-                  &nbsp;&nbsp;
-                  <Icon type="rollback" theme="outlined" />
-                </p>
-              </div>
-              <Button type="default">Default</Button>
-              &nbsp;
-              <Button type="primary">Primary</Button>
-              &nbsp;
-              <Button type="danger">Danger</Button>
-              &nbsp;
-              <Button type="primary" loading={true}>
-                Save
-              </Button>
-              &nbsp;
-              <Button type="danger" icon="poweroff">
-                Power Off
-              </Button>
-              &nbsp; &nbsp;&nbsp;&nbsp;
+              <IconSample />
+              <ButtonSample />
               <div style={{ paddingTop: 16 }}>
                 <Dropdown />
               </div>
+              <TableSample />
             </div>
           </Content>
         </Layout>
