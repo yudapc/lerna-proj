@@ -4,6 +4,10 @@
 
 Project ReactJS mono repo
 
+### Preparation
+
+`lerna bootstrap`
+
 ### Run:
 
 `yarn run dev`
