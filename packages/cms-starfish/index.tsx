@@ -1,5 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { HomePage } from "./src/pages/home-page";
+import { AppRoute } from "./src/routes";
 
-ReactDOM.render(<HomePage />, document.getElementById("app"));
+ReactDOM.render(<AppRoute />, document.getElementById("app"));
