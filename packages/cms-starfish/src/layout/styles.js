@@ -1,6 +1,6 @@
 export const styles = {
   container: {
-    padding: 16
+    padding: 15
   },
   headerTitle: {
     color: "white",

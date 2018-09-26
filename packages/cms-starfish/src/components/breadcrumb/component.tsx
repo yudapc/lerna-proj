@@ -1,18 +1,22 @@
 import { Breadcrumb, BreadcrumbItem } from "@bmd/components";
 import * as React from "react";
+import titleize from "titleize";
+import { Link } from "react-router-dom";
 
 export class BreadcrumbComponent extends React.Component {
   render() {
+    const fullPath = window.location.pathname;
+    const paths = fullPath.split("/");
+    console.log("paths: ", paths);
     return (
       <Breadcrumb>
-        <BreadcrumbItem>Home</BreadcrumbItem>
-        <BreadcrumbItem>
-          <a href="">Application Center</a>
-        </BreadcrumbItem>
-        <BreadcrumbItem>
-          <a href="">Application List</a>
-        </BreadcrumbItem>
-        <BreadcrumbItem>An Application</BreadcrumbItem>
+        {paths.map((path, pathIndex) => (
+          <BreadcrumbItem key={`uniq-breadcrumb-${pathIndex}`}>
+            <Link to={`/${path}`}>
+              {path === "" && pathIndex === 0 ? "Dashboard" : titleize(path)}
+            </Link>
+          </BreadcrumbItem>
+        ))}
       </Breadcrumb>
     );
   }

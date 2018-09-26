@@ -1,6 +1,7 @@
 import { Icon, Menu, MenuItem, SubMenu } from "@bmd/components";
 import * as React from "react";
 import { styles } from "./styles";
+import { Link } from "react-router-dom";
 
 export class MenuSidebarComponent extends React.Component {
   state = {
@@ -23,39 +24,47 @@ export class MenuSidebarComponent extends React.Component {
         inlineCollapsed={this.state.collapsed}
         style={styles.container}
       >
-        <MenuItem key="1">
-          <Icon type="dashboard" theme="outlined" />
-          <span>Dashboard</span>
+        <MenuItem key="parent-menu-1">
+          <Link to="/">
+            <Icon type="dashboard" theme="outlined" />
+            <span>Dashboard</span>
+          </Link>
         </MenuItem>
-        <MenuItem key="2">
-          <Icon type="line-chart" theme="outlined" />
-          <span>Statistik</span>
+        <MenuItem key="parent-menu-2">
+          <Link to="/statistik">
+            <Icon type="line-chart" theme="outlined" />
+            <span>Statistik</span>
+          </Link>
         </MenuItem>
-        <MenuItem key="3">
-          <Icon type="tag" theme="outlined" />
-          <span>Promo</span>
+        <MenuItem key="parent-menu-3">
+          <Link to="/promo">
+            <Icon type="tag" theme="outlined" />
+            <span>Promo</span>
+          </Link>
         </MenuItem>
-        <MenuItem key="4">
+        <MenuItem key="parent-menu-4">
           <Icon type="team" theme="outlined" />
           <span>Memberships</span>
         </MenuItem>
-        <MenuItem key="5">
+        <MenuItem key="parent-menu-5">
           <Icon type="shopping-cart" theme="outlined" />
           <span>Order</span>
         </MenuItem>
-        <MenuItem key="6">
+        <MenuItem key="parent-menu-6">
           <Icon type="star" theme="outlined" />
           <span>Review</span>
         </MenuItem>
-        <MenuItem key="7">
-          <Icon type="user" theme="outlined" />
-          <span>Users</span>
+        <MenuItem key="parent-menu-7">
+          <Link to="/users">
+            <Icon type="user" theme="outlined" />
+            <span>Users</span>
+          </Link>
         </MenuItem>
-        <MenuItem key="8">
+        <MenuItem key="parent-menu-8">
           <Icon type="safety-certificate" theme="outlined" />
           <span>Role Access</span>
         </MenuItem>
-        <MenuItem key="9">
+        <MenuItem key="parent-menu-9">
           <Icon type="database" theme="outlined" />
           <span>Activity Log</span>
         </MenuItem>

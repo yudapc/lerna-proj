@@ -31,7 +31,10 @@ export class LayoutCms extends React.Component<Iprops, any> {
             <MenuSidebar />
           </Sider>
           <Content>
-            <div style={styles.container}>{children}</div>
+            <div style={styles.container}>
+              <Breadcrumb />
+              {children}
+            </div>
           </Content>
         </Layout>
         <Footer>Copyright Bhinneka.com 2018</Footer>

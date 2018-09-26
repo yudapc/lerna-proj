@@ -9,7 +9,7 @@ export class PageDashboardComponent extends React.Component<any, any> {
   render() {
     return (
       <LayoutCms>
-        <TitlePage>Home Page</TitlePage>
+        <TitlePage>Dashboard</TitlePage>
         <IconSample />
         <ButtonSample />
         <TableSample />
