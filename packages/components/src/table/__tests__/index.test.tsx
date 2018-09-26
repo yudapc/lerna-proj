@@ -4,16 +4,16 @@ import * as React from "react";
 import { Column, ColumnGroup, Divider, Table, Tag } from "../index";
 Enzyme.configure({ adapter: new Adapter() });
 
-const dataSource = [
-  {
-    key: "3",
-    firstName: "Joe",
-    lastName: "Black",
-    age: 32,
-    address: "Sidney No. 1 Lake Park",
-    tags: ["cool", "teacher"]
-  }
-];
+// const dataSource = [
+//   {
+//     key: "3",
+//     firstName: "Joe",
+//     lastName: "Black",
+//     age: 32,
+//     address: "Sidney No. 1 Lake Park",
+//     tags: ["cool", "teacher"]
+//   }
+// ];
 
 xdescribe("Table", () => {
   it("should get props children", () => {
