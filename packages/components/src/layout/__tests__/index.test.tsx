@@ -1,7 +1,7 @@
 import Enzyme, { mount } from "enzyme";
 import Adapter from "enzyme-adapter-react-16";
 import * as React from "react";
-import { Content, Footer, Header, Sider, Layout } from "../index";
+import { Content, Footer, Header, Layout, Sider } from "../index";
 Enzyme.configure({ adapter: new Adapter() });
 
 describe("Content", () => {
