@@ -4,6 +4,7 @@ import { PageDashboard } from "../pages/page-dashboard";
 import { PageStatistik } from "../pages/page-statistik";
 import { PagePromo } from "../pages/page-promo";
 import { PageUsers } from "../pages/page-users";
+import { PageMemberShip } from "../pages/page-membership";
 
 export class AppRoute extends React.Component {
   render() {
@@ -14,6 +15,7 @@ export class AppRoute extends React.Component {
           <Route path="/statistik" component={PageStatistik} />
           <Route path="/promo" component={PagePromo} />
           <Route path="/users" component={PageUsers} />
+          <Route path="/membership" component={PageMemberShip} />
         </Switch>
       </Router>
     );

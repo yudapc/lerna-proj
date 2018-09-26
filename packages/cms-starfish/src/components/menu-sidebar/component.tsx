@@ -43,8 +43,10 @@ export class MenuSidebarComponent extends React.Component {
           </Link>
         </MenuItem>
         <MenuItem key="parent-menu-4">
-          <Icon type="team" theme="outlined" />
-          <span>Memberships</span>
+          <Link to="/membership">
+            <Icon type="team" theme="outlined" />
+            <span>Memberships</span>
+          </Link>
         </MenuItem>
         <MenuItem key="parent-menu-5">
           <Icon type="shopping-cart" theme="outlined" />
