@@ -24,16 +24,40 @@ export class MenuSidebarComponent extends React.Component {
         style={styles.container}
       >
         <MenuItem key="1">
-          <Icon type="pie-chart" />
-          <span>Option 1</span>
+          <Icon type="dashboard" theme="outlined" />
+          <span>Dashboard</span>
         </MenuItem>
         <MenuItem key="2">
-          <Icon type="desktop" />
-          <span>Option 2</span>
+          <Icon type="line-chart" theme="outlined" />
+          <span>Statistik</span>
         </MenuItem>
         <MenuItem key="3">
-          <Icon type="inbox" />
-          <span>Option 3</span>
+          <Icon type="tag" theme="outlined" />
+          <span>Promo</span>
+        </MenuItem>
+        <MenuItem key="4">
+          <Icon type="team" theme="outlined" />
+          <span>Memberships</span>
+        </MenuItem>
+        <MenuItem key="5">
+          <Icon type="shopping-cart" theme="outlined" />
+          <span>Order</span>
+        </MenuItem>
+        <MenuItem key="6">
+          <Icon type="star" theme="outlined" />
+          <span>Review</span>
+        </MenuItem>
+        <MenuItem key="7">
+          <Icon type="user" theme="outlined" />
+          <span>Users</span>
+        </MenuItem>
+        <MenuItem key="8">
+          <Icon type="safety-certificate" theme="outlined" />
+          <span>Role Access</span>
+        </MenuItem>
+        <MenuItem key="9">
+          <Icon type="database" theme="outlined" />
+          <span>Activity Log</span>
         </MenuItem>
         <SubMenu
           key="sub1"

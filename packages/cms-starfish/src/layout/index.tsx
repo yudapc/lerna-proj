@@ -11,11 +11,20 @@ interface Iprops {
 export class LayoutCms extends React.Component<Iprops, any> {
   render() {
     const { children } = this.props;
-    const headerTitle = "CMS Starfish";
+    const headerTitle = "B2C";
     return (
       <Layout>
-        <Header>
-          <span style={styles.headerTitle}>{headerTitle}</span>
+        <Header
+          style={{
+            backgroundColor: "#dd4b39",
+            minHeight: 50,
+            height: 50,
+            lineHeight: 0,
+            paddingTop: 25,
+            paddingLeft: 80
+          }}
+        >
+          <strong style={styles.headerTitle}>{headerTitle}</strong>
         </Header>
         <Layout>
           <Sider>

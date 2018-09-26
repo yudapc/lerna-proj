@@ -4,6 +4,7 @@ export const styles = {
   },
   headerTitle: {
     color: "white",
-    fontSize: 18
+    fontSize: 20,
+    fontWeight: "700"
   }
 };
