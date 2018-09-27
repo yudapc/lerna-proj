@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Icon } from "@bmd/components";
+import { Icon } from "bmdcomponents";
 
 export class IconSample extends React.Component {
   render() {

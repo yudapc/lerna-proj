@@ -1,4 +1,4 @@
-import { Icon, Menu, MenuItem, SubMenu } from "@bmd/components";
+import { Icon, Menu, MenuItem, SubMenu } from "bmdcomponents";
 import * as React from "react";
 import { styles } from "./styles";
 import { Link } from "react-router-dom";

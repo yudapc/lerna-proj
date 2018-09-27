@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Button } from "@bmd/components";
+import { Button } from "bmdcomponents";
 
 export class ButtonSample extends React.Component {
   render() {

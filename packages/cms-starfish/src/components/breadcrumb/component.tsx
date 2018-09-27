@@ -1,4 +1,4 @@
-import { Breadcrumb, BreadcrumbItem } from "@bmd/components";
+import { Breadcrumb, BreadcrumbItem } from "bmdcomponents";
 import * as React from "react";
 import titleize from "titleize";
 import { Link } from "react-router-dom";

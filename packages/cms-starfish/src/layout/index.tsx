@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Content, Footer, Header, Sider, Layout } from "@bmd/components";
+import { Content, Footer, Header, Sider, Layout } from "bmdcomponents";
 import { MenuSidebar } from "../components/menu-sidebar";
 import { Breadcrumb } from "../components/breadcrumb";
 import { styles } from "./styles";

@@ -5,7 +5,8 @@
     "lerna": "^3.4.0"
   },
   "scripts": {
-    "dev": "lerna run dev --parallel --scope \"@bmd/{cms-starfish,apa}\"",
+    "prepare": "npm run compile-ts --prefix packages/components",
+    "dev": "lerna run dev --parallel --scope \"@bmd/{cms-starfish,cms-starfish-react}\"",
     "test": "CI=true npm test --prefix packages/components"
   },
   "workspaces": [

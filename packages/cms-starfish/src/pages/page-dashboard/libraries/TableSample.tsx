@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Column, ColumnGroup, Divider, Table, Tag } from "@bmd/components";
+import { Column, ColumnGroup, Divider, Table, Tag } from "bmdcomponents";
 
 const data = [
   {
