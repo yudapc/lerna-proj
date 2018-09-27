@@ -1,7 +1,7 @@
 {
-  "name": "@bmd/components",
+  "name": "bmdcomponents",
   "version": "1.0.0",
-  "main": "src/index.tsx",
+  "main": "build/lib/index.js",
   "types": "build/lib/index.d.ts",
   "files": [
     "build/lib"

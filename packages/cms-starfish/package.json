@@ -6,7 +6,7 @@
     "dev": "parcel index.pug --no-cache"
   },
   "dependencies": {
-    "@bmd/components": "1.0.0",
+    "bmdcomponents": "1.0.0",
     "react": ">=16.0.0",
     "react-dom": ">=16.0.0",
     "react-router-dom": "^4.3.1",
