@@ -2,7 +2,7 @@ import * as React from "react";
 import { Content, Footer, Header, Sider, Layout } from "bmdcomponents";
 import { MenuSidebar } from "../components/menu-sidebar";
 import { Breadcrumb } from "../components/breadcrumb";
-import { styles } from "./styles";
+import "./styles.css";
 
 interface Iprops {
   children?: any;
@@ -13,31 +13,27 @@ export class LayoutCms extends React.Component<Iprops, any> {
     const { children } = this.props;
     const headerTitle = "B2C";
     return (
-      <Layout>
-        <Header
-          style={{
-            backgroundColor: "#dd4b39",
-            minHeight: 50,
-            height: 50,
-            lineHeight: 0,
-            paddingTop: 25,
-            paddingLeft: 80
-          }}
-        >
-          <strong style={styles.headerTitle}>{headerTitle}</strong>
+      <Layout className="bt-cms">
+        <Header className="bt-cms-header">
+          <strong>{headerTitle}</strong>
         </Header>
         <Layout>
-          <Sider>
+          <Sider className="bt-cms-sidebar"
+            breakpoint="lg"
+            collapsedWidth="0"
+            onBreakpoint={(broken) => { console.log(broken); }}
+            onCollapse={(collapsed, type) => { console.log(collapsed, type); }}
+          >
             <MenuSidebar />
           </Sider>
-          <Content>
-            <div style={styles.container}>
+          <Layout>
+            <Content className="bt-cms-content">
               <Breadcrumb />
               {children}
-            </div>
-          </Content>
+            </Content>
+            <Footer className="bt-cms-footer">Copyright Bhinneka.com 2018</Footer>
+          </Layout>
         </Layout>
-        <Footer>Copyright Bhinneka.com 2018</Footer>
       </Layout>
     );
   }

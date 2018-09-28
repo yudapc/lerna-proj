@@ -1,0 +1,39 @@
+.bt-cms {
+  min-height: 100vh;
+}
+.bt-cms-header {
+  background-color: #dd4b39;
+  padding-left: 24px;
+}
+.bt-cms-header strong {
+  background-color: #dd4b39;
+  color: #fff;
+  font-size: 24px;
+}
+.bt-cms-sidebar .ant-layout-sider-zero-width-trigger {
+  top: 0;
+}
+.bt-cms-content {
+  padding: 32px;
+}
+.bt-cms-footer {
+  font-size: 12px;
+  text-align: center;
+}
+@media (max-width: 576px) {
+  
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 992px) {
+  .bt-cms-content {
+    padding-top: 64px;
+  }
+}
+
+@media (max-width: 1200px) {
+  
+}
