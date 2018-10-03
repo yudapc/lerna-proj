@@ -7,7 +7,7 @@
 }
 .bt-cms-header strong {
   background-color: #dd4b39;
-  color: #fff;
+  color: #FFFFFF;
   font-size: 24px;
 }
 .bt-cms-sidebar .ant-layout-sider-zero-width-trigger {
@@ -20,6 +20,77 @@
   font-size: 12px;
   text-align: center;
 }
+.bt-page-title {
+  margin-bottom: 24px;
+}
+.ant-table-body .ant-table-thead > tr > th {
+  background: #FFFFFF;
+}
+.ant-table-content table tr:nth-of-type(odd) {
+  background: #F9FAFA;
+}
+.ant-table-content table tr:nth-of-type(even) {
+  background: #F5F5F6;
+}
+.bt-cms-content--cardtable .ant-card-wider-padding {
+  border-width: 0 0 1px;
+}
+.bt-cms-content--cardtable .ant-card-wider-padding .ant-card-body {
+  padding: 16px;
+}
+.bt-cms-content--cardtable .ant-card {
+  border-radius: 4px 4px 0 0;
+}
+.bt-cms-content--cardtable .ant-table table {
+  border-radius: 0;
+}
+.bt-cms-content--cardtable .ant-table-thead > tr:first-child > th:first-child {
+  border-top-left-radius: 0;
+}
+.bt-cms-content--cardtable .ant-table-thead > tr:first-child > th:last-child {
+  border-top-right-radius: 0;
+}
+.bt-cms-content--cardtable .ant-table-wrapper {
+  background: #FFFFFF;
+  border-radius: 0 0 4px 4px;
+}
+.bt-cms-content--cardtable .ant-pagination {
+  margin-right: 16px;
+}
+.bt-cms-filter-text {
+  min-width: 300px;
+}
+.bt-cms-table-action {
+  text-align: right;
+}
+.bt-cms-table-action a {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.bt-info-right {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0;
+}
+.bt-info-right + .ant-form-inline {
+  padding-right: 100px;
+}
+.bt-vertical-layout-group {
+  margin-bottom: 16px;
+}
+.bt-vertical-layout-group:last-child {
+  margin-bottom: 0;
+}
+.bt-vertical-layout-group .bt-vertical-layout-label {
+  font-weight: 600;
+  text-align: right;
+}
+.ant-modal-footer .ant-btn:first-child {
+  float: left;
+}
+
 @media (max-width: 576px) {
   
 }

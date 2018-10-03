@@ -6,11 +6,12 @@ import "./styles.css";
 
 interface Iprops {
   children?: any;
+  classCMSContent?: string;
 }
 
 export class LayoutCms extends React.Component<Iprops, any> {
   render() {
-    const { children } = this.props;
+    const { children, classCMSContent } = this.props;
     const headerTitle = "B2C";
     return (
       <Layout className="bt-cms">
@@ -27,7 +28,7 @@ export class LayoutCms extends React.Component<Iprops, any> {
             <MenuSidebar />
           </Sider>
           <Layout>
-            <Content className="bt-cms-content">
+            <Content className={`bt-cms-content ${classCMSContent}`}>
               <Breadcrumb />
               {children}
             </Content>
@@ -38,4 +39,9 @@ export class LayoutCms extends React.Component<Iprops, any> {
     );
   }
 }
+
+LayoutCms.defaultProps = {
+  classCMSContent: 'bt-cms-content',
+}
+
 export default LayoutCms;
