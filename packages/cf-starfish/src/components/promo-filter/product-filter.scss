@@ -1,0 +1,24 @@
+.bt-promo-sidebar {
+  background-repeat: repeat-x;
+  background-image: linear-gradient(-135deg, #f9fafa, #fff);
+  padding-right: 16px;
+  padding-bottom: 32px;
+  overflow: auto;
+  height: 100%;
+  border-bottom: 1px solid #e1e3e6;
+  .bt-promo-filter {
+    padding-top: 32px;
+    .bt-promo-filter__item {
+      margin-bottom: 8px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      a {
+        display: block;
+      }
+    }
+  }
+  @media (max-width: 991.98px) {
+    display: none;
+  }
+}

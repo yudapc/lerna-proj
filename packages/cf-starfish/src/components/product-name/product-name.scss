@@ -1,0 +1,22 @@
+@mixin text-overflow($font-size , $lines-to-show){
+  $line-height: 1.5;
+  margin: 0;
+  display: block;
+  display: -webkit-box;
+  max-height: $font-size*$line-height*$lines-to-show;
+  font-size: $font-size;
+  line-height: $line-height;
+  -webkit-line-clamp: $lines-to-show;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0;
+  white-space: normal;
+}
+.bt-product-title {
+  margin-bottom: 10px;
+  .bt-product-title__name {
+    @include text-overflow(16px , 2);
+  }
+
+}

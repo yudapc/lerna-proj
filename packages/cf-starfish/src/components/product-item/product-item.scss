@@ -1,0 +1,30 @@
+.bt-product-item {
+  border-radius: 5px;
+  border-bottom: none;
+  height: 306px;
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+  a {
+    text-decoration: none;
+    color: #3e3e3f;
+  }
+  @media (min-width: 992px) {
+    &:hover {
+      -webkit-box-shadow: 0 0 0 1px rgba(16, 22, 26, 0.1), 0 1px 1px 0 rgba(16, 22, 26, 0.1);
+      box-shadow: 0 0 0 1px rgba(16, 22, 26, 0.1), 0 1px 1px 0 rgba(16, 22, 26, 0.1);
+    }
+  }
+}
+@media (max-width: 991.98px) {
+  .bt-promo-section {
+    .bt-product-item {
+      margin-bottom: 0;
+      display: inline-block;
+      float: none;
+      width: 200px;
+      padding-bottom: 0;
+      vertical-align: top;
+      flex: none;
+    }
+  }
+}
