@@ -1,14 +1,14 @@
 import Link from "next/link";
-import ContentEditable from "../helpers/content-editable";
+import ContentEditable from "helpers/content-editable";
+import Layout, { Header, Footer } from "components/layout";
 
 export const Index = () => {
-  const TitleEditable = ContentEditable("h1");
-  const AddressEditable = ContentEditable("div");
+  const ContentBodyEditable = ContentEditable("div");
 
   return (
-    <div>
-      <TitleEditable value="Welcome" />
-      <AddressEditable value="Index Page!" />
+    <Layout>
+      <Header>Welcome</Header>
+      <ContentBodyEditable value="Index Page!" />
       <br />
       <div>
         <Link href="/about">
@@ -16,7 +16,8 @@ export const Index = () => {
         </Link>
       </div>
       <div />
-    </div>
+      <Footer>Copyright @ 2018</Footer>
+    </Layout>
   );
 };
 export default Index;

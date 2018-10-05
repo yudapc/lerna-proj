@@ -1,7 +1,8 @@
 import Link from "next/link";
+import Layout from "components/layout";
 
 export const About = () => (
-  <div>
+  <Layout>
     <h1>About</h1>
     <p>This is page About</p>
     <div>
@@ -9,6 +10,6 @@ export const About = () => (
         <a>Back to Home Page</a>
       </Link>
     </div>
-  </div>
+  </Layout>
 );
 export default About;
