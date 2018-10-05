@@ -1,14 +1,22 @@
 import Link from "next/link";
+import ContentEditable from "../helpers/content-editable";
 
-export const Index = () => (
-  <div>
-    <h1>Welcome</h1>
-    <p>Index Page</p>
+export const Index = () => {
+  const TitleEditable = ContentEditable("h1");
+  const AddressEditable = ContentEditable("div");
+
+  return (
     <div>
-      <Link href="/about">
-        <a>Go to page About</a>
-      </Link>
+      <TitleEditable value="Welcome" />
+      <AddressEditable value="Index Page!" />
+      <br />
+      <div>
+        <Link href="/about">
+          <a>Go to page About</a>
+        </Link>
+      </div>
+      <div />
     </div>
-  </div>
-);
+  );
+};
 export default Index;
