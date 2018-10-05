@@ -1,4 +1,5 @@
 import React, { Component, createRef } from "react";
+import Document from "next/document";
 
 interface WrappedComponentProps {
   onSave?: void;
@@ -25,34 +26,27 @@ export const ContentEditable = (WrappedComponent: any) => {
       }
     };
 
+    toggleEditImage = (e: Event) => {
+      // document.getElementById("file-image").click();
+      alert("open modal media files");
+    };
+
     edit = () => {
-      this.setState(
-        {
-          editing: true
-        },
-        () => {
-          this.myRef.current.focus();
-        }
-      );
+      this.setState({ editing: true }, () => {
+        this.myRef.current.focus();
+      });
     };
 
     save = () => {
-      this.setState(
-        {
-          editing: false
-        },
-        () => {
-          if (this.props.onSave && this.isValueChanged()) {
-            console.log("Value is changed", this.myRef.current.textContent);
-          }
+      this.setState({ editing: false }, () => {
+        if (this.props.onSave && this.isValueChanged()) {
+          console.log("Value is changed", this.myRef.current.textContent);
         }
-      );
+      });
     };
 
     cancel = () => {
-      this.setState({
-        editing: false
-      });
+      this.setState({ editing: false });
     };
 
     isValueChanged = () => {
@@ -74,6 +68,21 @@ export const ContentEditable = (WrappedComponent: any) => {
       const { editing } = this.state;
       if (this.props.editOnClick !== undefined) {
         editOnClick = this.props.editOnClick;
+      }
+      if (WrappedComponent === "img") {
+        return (
+          <WrappedComponent
+            id="btnAttachment"
+            src={this.props.value}
+            className={editing ? "editing" : ""}
+            onClick={editOnClick ? this.toggleEditImage : undefined}
+            contentEditable={editing}
+            ref={this.myRef}
+            onBlur={this.save}
+            onKeyDown={this.handleKeyDown}
+            {...this.props}
+          />
+        );
       }
       return (
         <WrappedComponent
