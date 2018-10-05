@@ -13,12 +13,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@zeit/next-typescript": "^1.1.1",
     "next": "^7.0.1",
     "react": "^16.5.2",
     "react-dom": "^16.5.2"
   },
   "devDependencies": {
+    "@zeit/next-typescript": "^1.1.1",
+    "babel-plugin-module-resolver": "^3.1.1",
     "@types/next": "^7.0.0"
   }
 }
