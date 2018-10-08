@@ -3,6 +3,11 @@
     "allowJs": true,
     "allowSyntheticDefaultImports": true,
     "baseUrl": "./",
+    "paths": {
+      "pages/*": ["pages/*"],
+      "helpers/*": ["helpers/*"],
+      "components/*": ["components/*"]
+    },
     "jsx": "preserve",
     "lib": ["dom", "es2017"],
     "module": "esnext",
@@ -13,6 +18,7 @@
     "preserveConstEnums": true,
     "removeComments": false,
     "skipLibCheck": true,
+    "skipDefaultLibCheck": false,
     "sourceMap": true,
     "strict": true,
     "target": "esnext"

@@ -1,6 +1,12 @@
 const withTypescript = require("@zeit/next-typescript");
-module.exports = withTypescript({
-  webpack(config, options) {
-    return config;
-  }
-});
+const withSass = require("@zeit/next-sass");
+const withCSS = require("@zeit/next-css");
+module.exports = withTypescript(
+  withSass(
+    withCSS({
+      webpack(config, options) {
+        return config;
+      }
+    })
+  )
+);

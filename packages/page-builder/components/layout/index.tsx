@@ -1,5 +1,6 @@
 import { StatelessComponent } from "react";
 import ContentEditable from "helpers/content-editable";
+import { Container, Row } from "reactstrap";
 
 const TitleEditable = ContentEditable("h1");
 const FooterTitleEditable = ContentEditable("p");
@@ -8,7 +9,9 @@ interface IStatelessComponent {
   children?: any;
 }
 export const Layout: StatelessComponent = (props: IStatelessComponent) => (
-  <div className="container">{props.children}</div>
+  <Container>
+    <Row>{props.children}</Row>
+  </Container>
 );
 
 Layout.defaultProps = {
