@@ -1,5 +1,4 @@
 import * as React from "react";
-import "./catalog-banner.scss";
 
 interface Iprops {
   bannerImageUrl?: string;

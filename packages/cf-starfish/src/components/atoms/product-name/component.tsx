@@ -1,5 +1,4 @@
 import * as React from "react";
-import "./product-name.scss";
 
 interface Iprops {
   productName?: string;

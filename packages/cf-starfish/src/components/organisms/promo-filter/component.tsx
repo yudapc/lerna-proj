@@ -1,5 +1,4 @@
 import * as React from "react";
-import "./product-filter.scss";
 
 interface Iprops {
   filterData?: any[];

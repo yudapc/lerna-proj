@@ -1,4 +1,25 @@
-@import "bootstrap/dist/css/bootstrap.min.css";
+// STYLE PLUGINS
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
+
+// STYLE ATOMS
+@import "./src/components/atoms/catalog-banner/catalog-banner.scss";
+@import "./src/components/atoms/product-image/product-image.scss";
+@import "./src/components/atoms/product-name/product-name.scss";
+@import "./src/components/atoms/product-price/product-price.scss";
+
+// STYLE MOLECULES
+@import "./src/components/molecules/catalog-header/catalog-header.scss";
+@import "./src/components/molecules/product-item/product-item.scss";
+
+// STYLE ORGANISMS
+@import "./src/components/organisms/promo-filter/product-filter.scss";
+
+// STYLE TEMPLATES
+@import "./src/components/templates/promo-section/promo-section.scss";
+
+// STYLE LAYOUT
+@import "./src/layouts/layouts.scss";
+
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Oxygen", "Ubuntu", "Helvetica Neue", "Lucida Grande", sans-serif;

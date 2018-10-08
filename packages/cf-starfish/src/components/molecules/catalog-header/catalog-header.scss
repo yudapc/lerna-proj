@@ -22,6 +22,9 @@
     width: 100%;
     overflow-x: scroll;
     overflow-y: hidden;
+    .bt-catalog-header__title {
+      font-size: 22px;
+    }
     .bt-catalog-header__description {
       margin-bottom: 8px;
       margin-top: 8px;

@@ -1,5 +1,4 @@
 import * as React from "react";
-import "./product-price.scss";
 
 interface Iprops {
   productPriceDiscount?: string;

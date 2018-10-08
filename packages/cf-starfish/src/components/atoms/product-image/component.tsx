@@ -1,5 +1,4 @@
 import * as React from "react";
-import "./product-image.scss";
 
 interface Iprops {
   productImageUrl?: string;

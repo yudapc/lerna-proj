@@ -1,5 +1,4 @@
 import * as React from "react";
-import "./promo-section.scss";
 
 interface Iprops {
   children?: any;
