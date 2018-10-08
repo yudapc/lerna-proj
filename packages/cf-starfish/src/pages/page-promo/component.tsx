@@ -1,10 +1,10 @@
 import * as React from "react";
 import { LayoutBase } from "../../layouts";
-import { PromoSection } from "../../components/promo-section";
-import { ProductItem } from "../../components/product-item";
-import { PromoFilter } from "../../components/promo-filter";
-import { CatalogBanner } from "../../components/catalog-banner";
-import { CatalogHeader } from "../../components/catalog-header";
+import { PromoSection } from "../../components/templates/promo-section";
+import { ProductItem } from "../../components/molecules/product-item";
+import { PromoFilter } from "../../components/organisms/promo-filter";
+import { CatalogBanner } from "../../components/atoms/catalog-banner";
+import { CatalogHeader } from "../../components/molecules/catalog-header";
 import { Row, Col } from 'reactstrap';
 
 export class PagePromoComponent extends React.Component<any, any> {

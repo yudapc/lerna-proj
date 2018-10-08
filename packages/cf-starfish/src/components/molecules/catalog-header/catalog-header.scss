@@ -7,10 +7,10 @@
   z-index: 2;
   .bt-catalog-header__title {
     margin-top: 0;
-    margin-bottom: 8px;
+    margin-bottom: 0;
   }
   .bt-catalog-header__description {
-    margin: 0;;
+    margin: 0;
   }
   .bt-catalog-header__tnc {
     line-height: 32px;
@@ -24,6 +24,7 @@
     overflow-y: hidden;
     .bt-catalog-header__description {
       margin-bottom: 8px;
+      margin-top: 8px;
     }
     .bt-catalog-header__tnc {
       display: block;
@@ -32,6 +33,7 @@
   @media (min-width: 992px) {
     .bt-catalog-header__description {
       display: inline-block;
+      line-height: 32px;
     }
     .bt-catalog-header__tnc {
       float: right;

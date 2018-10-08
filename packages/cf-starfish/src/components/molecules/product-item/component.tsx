@@ -1,7 +1,7 @@
 import * as React from "react";
-import { ProductImage } from "../../components/product-image";
-import { ProductName } from "../../components/product-name";
-import { ProductPrice } from "../../components/product-price";
+import { ProductImage } from "../../atoms/product-image";
+import { ProductName } from "../../atoms/product-name";
+import { ProductPrice } from "../../atoms/product-price";
 import { Row, Col } from 'reactstrap';
 import "./product-item.scss";
 
