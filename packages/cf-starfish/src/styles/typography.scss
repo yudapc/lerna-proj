@@ -1,0 +1,53 @@
+// -----  Regular Sizes  -----
+
+.bt-typo-mono { font-family: Menlo, Monaco, Consolas, "Courier New", monospace; }
+
+.bt-typo-caption {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+}
+.bt-typo-body {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+}
+.bt-typo-subheading {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 600;
+}
+.bt-typo-heading {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+
+// -----  Display Sizes  -----
+
+.bt-typo-displaysmall {
+  font-family: $font-geomanist-book;
+  font-size: 20px;
+  line-height: 24px;
+}
+.bt-typo-displaymedium {
+  font-family: $font-geomanist-book;
+  font-size: 26px;
+  line-height: 32px;
+  
+}
+.bt-typo-displaylarge {
+  font-family: $font-geomanist-medium;
+  font-size: 28px;
+  line-height: 32px;
+}
+.bt-typo-displayxlarge {
+  font-family: $font-geomanist-medium;
+  font-size: 42px;
+  line-height: 44px;
+}
+
+// -----  Utilities  -----
+
+.--prewrap { white-space: pre-wrap; }

@@ -19,53 +19,10 @@
 
 // STYLE LAYOUT
 @import "./src/layouts/layouts.scss";
-
+@import "./src/styles/bt_variables.scss";
+@import "./src/styles/geomanist-webfont.scss";
+@import "./src/styles/typography.scss";
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Oxygen", "Ubuntu", "Helvetica Neue", "Lucida Grande", sans-serif;
   font-size: 14px;
-  line-height: 1.428571429;
-  color: #363637;
-  background-color: #fff;
-}
-
-.bt-typo-mono { 
-  font-family: Menlo, Monaco, Consolas, "Courier New", monospace; 
-}
-.bt-typo-caption {
-  font-size: 12px;
-  line-height: 16px;
-  font-weight: 500;
-}
-.bt-typo-body {
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 500;
-}
-.bt-typo-subheading {
-  font-size: 12px;
-  line-height: 16px;
-  font-weight: 600;
-}
-.bt-typo-heading {
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 600;
-  letter-spacing: 0.2px;
-}
-.bt-typo-displaysmall {
-  font-size: 20px;
-  line-height: 24px;
-}
-.bt-typo-displaymedium {
-  font-size: 26px;
-  line-height: 32px;
-}
-.bt-typo-displaylarge {
-  font-size: 28px;
-  line-height: 32px;
-}
-.bt-typo-displayxlarge {
-  font-size: 42px;
-  line-height: 44px;
 }
