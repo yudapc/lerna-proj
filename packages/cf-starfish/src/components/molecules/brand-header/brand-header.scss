@@ -1,0 +1,22 @@
+.bt-brand-header {
+  background: $white;
+  padding: $spacing-lg 0;
+  position: relative;
+  border-bottom: 1px solid $slate;
+  .bt-brand-header__text {
+    position: relative;
+  }
+  @include media-breakpoint-down(md) {
+    padding: $spacing-md 0;
+  }
+  @include media-breakpoint-down(sm) {
+    .bt-brand-header__text {
+      display: table-cell;
+      vertical-align: top;
+    }
+  }
+  @media (min-width: 1441px) {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+}

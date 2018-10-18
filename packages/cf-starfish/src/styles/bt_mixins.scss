@@ -1,0 +1,50 @@
+@mixin absolute-pseudo($z-index: auto){
+  content: '';
+  position: absolute;
+  z-index: $z-index;
+}
+@mixin display-scroll() {
+  max-width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+@mixin no-gutter() {
+  margin-left: -16px;
+  margin-right: -16px;
+}
+@mixin text-overflow($font-size , $lines-to-show){
+  $line-height: 1.5;
+  margin: 0;
+  display: block;
+  display: -webkit-box;
+  max-height: $font-size*$line-height*$lines-to-show;
+  font-size: $font-size;
+  line-height: $line-height;
+  -webkit-line-clamp: $lines-to-show;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0;
+  white-space: normal;
+}
+.bt-center-y {
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  position: absolute;
+}
+.bt-center-x {
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  position: absolute;
+}
+.bt-center-xy {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  position: absolute;
+}

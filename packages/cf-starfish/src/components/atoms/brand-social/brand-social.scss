@@ -1,0 +1,57 @@
+.bt-brand-header__text {
+  .bt-brand-social {
+    @extend .bt-center-y;
+    right: 0;
+    ul {
+      margin: 0;
+      list-style: none;
+      padding: 0;
+      li {
+        padding-left: $spacing-md;
+        display: inline-block;
+        -webkit-transform: none;
+        transform: none;
+        -webkit-transition: -webkit-transform 0.2s;
+        transition: -webkit-transform 0.2s;
+        transition: transform 0.2s;
+        transition: transform 0.2s, -webkit-transform 0.2s;
+        &:first-child {
+          padding-left: 0;
+        }
+        &:hover {
+          -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+        }
+        a {
+          display: block;
+        }
+        a:hover img {
+          -webkit-filter: saturate(100%);
+          filter: saturate(100%);
+        }
+        img {
+          -webkit-filter: saturate(0%);
+          filter: saturate(0%);
+          width: 26px;
+        }
+      }
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    .bt-brand-social {
+      position: relative;
+      left: 0;
+      right: 0;
+      transform: none;
+      -webkit-transform: none;
+      ul {
+        li {
+          padding-right: $spacing-sm;
+          img {
+            width: 18px;
+          }
+        }
+      }
+    }
+  }
+}

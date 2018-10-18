@@ -1,29 +1,45 @@
+// STYLE CUSTOM
+@import "./src/styles/geomanist-webfont.scss";
+@import "./src/styles/bt_mixins.scss";
+@import "./src/styles/bt_variables.scss";
+@import "./src/styles/typography.scss";
+
 // STYLE PLUGINS
 @import "./node_modules/bootstrap/scss/bootstrap.scss";
+$slick-font-path: '/fonts/' !default;
+@import "./node_modules/slick-carousel/slick/slick.scss";
+
+// STYLE GENERAL
+@import "./src/styles/general.scss";
+@import "./src/styles/custom.scss";
 
 // STYLE ATOMS
 @import "./src/components/atoms/catalog-banner/catalog-banner.scss";
 @import "./src/components/atoms/product-image/product-image.scss";
 @import "./src/components/atoms/product-name/product-name.scss";
 @import "./src/components/atoms/product-price/product-price.scss";
+@import "./src/components/atoms/brand-logo/brand-logo.scss";
+@import "./src/components/atoms/brand-social/brand-social.scss";
+@import "./src/components/atoms/brand-title/brand-title.scss";
+@import "./src/components/atoms/product-banner/product-banner.scss";
 
 // STYLE MOLECULES
 @import "./src/components/molecules/catalog-header/catalog-header.scss";
 @import "./src/components/molecules/product-item/product-item.scss";
+@import "./src/components/molecules/brand-header/brand-header.scss";
+@import "./src/components/molecules/product-item-box/product-item-box.scss";
 
 // STYLE ORGANISMS
 @import "./src/components/organisms/promo-filter/product-filter.scss";
+@import "./src/components/organisms/banner-with-sku/banner-with-sku.scss";
+@import "./src/components/organisms/banner-one-column/banner-one-column.scss";
+@import "./src/components/organisms/banner-two-column/banner-two-column.scss";
+@import "./src/components/organisms/banner-four-column/banner-four-column.scss";
+@import "./src/components/organisms/product-item-carousel/product-item-carousel.scss";
+@import "./src/components/organisms/banner-with-carousel/banner-with-carousel.scss";
 
 // STYLE TEMPLATES
 @import "./src/components/templates/promo-section/promo-section.scss";
 
 // STYLE LAYOUT
 @import "./src/layouts/layouts.scss";
-@import "./src/styles/bt_variables.scss";
-@import "./src/styles/geomanist-webfont.scss";
-@import "./src/styles/typography.scss";
-@import "./src/styles/custom.scss";
-
-body {
-  font-size: 14px;
-}

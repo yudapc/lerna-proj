@@ -1,0 +1,42 @@
+.bt-brand-header {
+  .bt-brand-header__logo {
+    position: absolute;
+    top: -80px;
+  }
+  .bt-brand-logo {
+    border: 1px solid $slate;
+    border-radius: $radius-lg;
+    background: $white;
+    img {
+      width: 160px;
+      height: 160px;
+      padding: $spacing-xs;
+    }
+  }
+  @include media-breakpoint-down(md) {
+    .bt-brand-header__logo {
+      top: -64px;
+    }
+    .bt-brand-logo {
+      img {
+        width: 128px;
+        height: 128px;
+      }
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    .bt-brand-header__logo {
+      position: relative;
+      top: 0;
+      display: table-cell;
+      vertical-align: top;
+      padding-right: 16px;
+    }
+    .bt-brand-logo {
+      img {
+        width: 64px;
+        height: 64px;
+      }
+    }
+  }
+}

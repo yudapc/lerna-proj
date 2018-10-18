@@ -1,0 +1,38 @@
+.bt-brand-header__text {
+  .bt-brand-title {
+    display: inline-block;
+    margin-left: 200px;
+    padding-right: 112px;
+    &__name {
+      text-transform: uppercase;
+      margin-top: 0;
+      font-weight: 700;
+      margin-bottom: $spacing-xs;
+    }
+    &__tagline {
+      margin: 0;
+      font-weight: 400;
+    }
+  }
+  @include media-breakpoint-down(md) {
+    .bt-brand-title {
+      margin-left: 168px;
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    .bt-brand-title {
+      margin-left: 0;
+      padding-right: 0;
+      margin-bottom: 10px;
+      &__name {
+        font-size: 16px;
+        margin-bottom: 0;
+        line-height: 24px;
+      }
+      &__tagline {
+        font-size: 12px;
+        line-height: 16px;
+      }
+    }
+  }
+}

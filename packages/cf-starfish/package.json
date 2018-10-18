@@ -6,13 +6,16 @@
     "dev": "parcel index.pug --no-cache"
   },
   "dependencies": {
+    "autoprefixer": "^9.1.5",
     "bmdcomponents": "1.0.0",
     "bootstrap": "^4.1.3",
     "node-sass": "^4.9.3",
     "react": ">=16.0.0",
     "react-dom": ">=16.0.0",
     "react-router-dom": "^4.3.1",
+    "react-slick": "^0.23.1",
     "reactstrap": "^6.4.0",
+    "slick-carousel": "^1.8.1",
     "titleize": "^1.0.1",
     "typescript": "^3.0.3"
   },

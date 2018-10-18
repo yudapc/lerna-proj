@@ -1,0 +1,30 @@
+.bt-product-carousel__withbanner {
+  height: 240px;
+  overflow: hidden;
+  padding-left: 0;
+  position: relative;
+  .bt-product-carousel__banner {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    width: 360px;
+    overflow: hidden;
+    border-radius: 5px;
+  }
+  @include media-breakpoint-up(md) {
+    padding-left: 376px;
+  }
+  @include media-breakpoint-down(sm) {
+    height: auto;
+    .bt-product-carousel__banner {
+      display: block;
+      position: relative;
+      margin-bottom: 16px;
+      width: 100%;
+      max-width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
