@@ -9,7 +9,7 @@
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
   }
-  @media (min-width: 992px) {
+  @include media-breakpoint-up(lg) {
     height: auto;
     position: relative;
     img {
@@ -18,7 +18,7 @@
       overflow: hidden;
     }
   }
-  @media (max-width: 991.98px) { 
+  @include media-breakpoint-down(md) {
     height: 240px;
     position: relative;
   }

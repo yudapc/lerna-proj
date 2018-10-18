@@ -1,9 +1,7 @@
 .bt-product-image {
   text-align: center;
   img {
-    width: 160px;
-    height: 160px;
-    margin-top: 16px;
-    margin-bottom: 16px;
+    display: block;
+    margin: 0 auto;
   }
 }

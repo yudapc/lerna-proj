@@ -1,19 +1,19 @@
 import * as React from "react";
-import { Container, Row, Col } from 'reactstrap';
 
 interface Iprops {
   children?: any;
+  classMainLayout?: string;
 }
 
 export class LayoutBase extends React.Component<Iprops, any> {
   render() {
-    const { children} = this.props;
+    const { children, classMainLayout } = this.props;
     return (
       <div className="bt-body-wrapper">
         <div className="bt-page-wrapper">
-          <Container fluid>
+          <main className={classMainLayout}>
             {children}
-          </Container>
+          </main>
         </div>
       </div>
     );

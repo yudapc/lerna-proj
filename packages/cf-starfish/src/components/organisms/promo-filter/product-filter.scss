@@ -1,15 +1,15 @@
 .bt-promo-sidebar {
   background-repeat: repeat-x;
-  background-image: linear-gradient(-135deg, #f9fafa, #fff);
-  padding-right: 16px;
-  padding-bottom: 32px;
+  background-image: linear-gradient(-135deg, $slate-lightest, $white);
+  padding-right: $spacing-md;
+  padding-bottom: $spacing-lg;
   overflow: auto;
   height: 100%;
-  border-bottom: 1px solid #e1e3e6;
+  border-bottom: 1px solid $slate;
   .bt-promo-filter {
-    padding-top: 32px;
+    padding-top: $spacing-lg;
     .bt-promo-filter__item {
-      margin-bottom: 8px;
+      margin-bottom: $spacing-sm;
       &:last-child {
         margin-bottom: 0;
       }
@@ -18,7 +18,7 @@
       }
     }
   }
-  @media (max-width: 991.98px) {
+  @include media-breakpoint-down(md) {
     display: none;
   }
 }

@@ -92,32 +92,52 @@ export class PagePromoComponent extends React.Component<any, any> {
       }
     ]
     return (
-      <LayoutBase>
-        <Row className="justify-content-md-center">
-          <CatalogBanner bannerImageUrl="https://as.bhinneka.com/www/images/ed54526346f369bb4fc2bb5e24b97d8e.jpg" />
-        </Row>
+      <LayoutBase classMainLayout="container-fluid">
+
+        {/* Section Promo Banner */}
+        <CatalogBanner bannerImageUrl="https://as.bhinneka.com/www/images/ed54526346f369bb4fc2bb5e24b97d8e.jpg" />
+
+        {/* Section Promo Header */}
+        <CatalogHeader 
+          catalogHeaderTitle="Aksesori Gadget Dan Portable Audio" 
+          catalogHeaderDescription="Dapatkan diskon 1 Jutaan untuk Headphones dan Aksesori sekarang" 
+        />
         <Row>
-          <CatalogHeader catalogHeaderTitle="Aksesori Gadget Dan Portable Audio" catalogHeaderDescription="Dapatkan diskon 1 Jutaan untuk Headphones dan Aksesori sekarang" />
-        </Row>
-        <Row>
+
+          {/* Section Promo Filter */}
           <Col lg="2" className="bt-promo-sidebar">
-            <PromoFilter filterData={filterData} filterHeader="Akses Cepat"  />
+            <PromoFilter 
+              filterData={filterData} 
+              filterHeader="Akses Cepat" 
+            />
           </Col>
+
+          {/* Section Promo List */}
           <Col lg="10" className="bt-promo-main">
+
+            {/* Secton Promo Item */}
             <PromoSection promoSectionTitle="Audiotechnica Special Price" promoSectionID="section1">
-              <ProductItem productData={productData}  />
+              <ProductItem productData={productData} />
             </PromoSection>
+
+            {/* Secton Promo Item */}
             <PromoSection promoSectionTitle="Sennheiser Earphone" promoSectionID="section2">
-              <ProductItem productData={productData}  />
+              <ProductItem productData={productData} />
             </PromoSection>
+            
+            {/* Secton Promo Item */}
             <PromoSection promoSectionTitle="Soundmagic Headset" promoSectionID="section3">
-              <ProductItem productData={productData}  />
+              <ProductItem productData={productData} />
             </PromoSection>
+            
+            {/* Secton Promo Item */}
             <PromoSection promoSectionTitle="Sony Headphone" promoSectionID="section4">
-              <ProductItem productData={productData}  />
+              <ProductItem productData={productData} />
             </PromoSection>
+
+            {/* Secton Promo Item */}
             <PromoSection promoSectionTitle="Wireless Headphones" promoSectionID="section5">
-              <ProductItem productData={productData}  />
+              <ProductItem productData={productData} />
             </PromoSection>
           </Col>
         </Row>

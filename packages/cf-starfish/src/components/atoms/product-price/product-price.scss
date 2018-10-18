@@ -1,11 +1,10 @@
 .bt-product-price {
-  height: 40px;
   .bt-product-price__discount {
     margin: 0;
     height: 16px;
-    color: #777777;
+    color: $carbon-light;
   }
-  .bt-product-price__web {
-    margin: 0;
+  @include media-breakpoint-down(md) {
+    margin-bottom: $spacing-sm;
   }
 }

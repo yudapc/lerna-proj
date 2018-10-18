@@ -1,38 +1,13 @@
-.popover-black {
-  background: #212529;
-  &.bs-popover-top .arrow::after, 
-  &.bs-popover-auto[x-placement^="top"] .arrow::after {
-    border-top-color: #212529;
-  }
-  &.bs-popover-bottom .arrow::after, 
-  &.bs-popover-auto[x-placement^="bottom"] .arrow::after {
-    border-bottom-color: #212529;
-  }
-  .popover-body {
-    color: #FFFFFF;
-  }
-}
-.popover-list-action {
-  .popover-body {
-    padding: 10px 16px;;
-  }
-  ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    li {
-      display: inline-block;
-      padding-left: 8px;
-      padding-right: 8px;
-      span {
-        font-size: 18px;
-      }
-      &:first-child {
-        padding-left: 0;
-      }
-      &:last-child {
-        padding-right: 0;
-      }
-    }
-  }
-}
+$brand-primary: $blue;
+$brand-success: $green;
+$brand-warning: $yellow;
+$text-color: $carbon-dark;
+$link-hover-color: $brand-primary !default;
+$grid-gutter-width: $spacing-lg;
+$container-large-desktop: (1168px + $grid-gutter-width) !default;
+$navbar-height: 64px !default;
+$navbar-inverse-bg: $bt-bg-dark;
+$font-family-base: $font-base;
+$btn-default-color: $text-color;
+$btn-default-bg: $slate-lighter;
+$btn-default-border: $slate-dark;

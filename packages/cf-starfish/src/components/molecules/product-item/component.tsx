@@ -2,7 +2,7 @@ import * as React from "react";
 import { ProductImage } from "../../atoms/product-image";
 import { ProductName } from "../../atoms/product-name";
 import { ProductPrice } from "../../atoms/product-price";
-import { Row, Col, Button, Popover, PopoverHeader, PopoverBody } from 'reactstrap';
+import { Row, Col } from 'reactstrap';
 
 interface Iprops {
   productData?: any[];
@@ -16,7 +16,7 @@ export class ProductItemComponent extends React.Component<Iprops, any> {
     return (
       <Row noGutters>
         {productData.map((product) => (
-          <Col lg="3" md="3" className="bt-product-item" key={product.id} id="Popover1">
+          <Col lg="3" md="3" className="bt-product-item" key={product.id}>
             <a href="#">
               <ProductImage productImageUrl={product.productImageUrl} />
               <ProductName productName={product.productName} />
@@ -27,10 +27,6 @@ export class ProductItemComponent extends React.Component<Iprops, any> {
       </Row>
     );
   }
-}
-
-ProductItemComponent.defaultProps = {
-  productItemType: 'bt-product-list',
 }
 
 

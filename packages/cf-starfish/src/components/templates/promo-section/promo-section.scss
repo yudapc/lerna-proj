@@ -1,31 +1,20 @@
-@mixin display-scroll() {
-  max-width: 100%;
-  overflow-x: scroll;
-  overflow-y: hidden;
-  white-space: nowrap;
-  -webkit-overflow-scrolling: touch;
-}
-@mixin no-gutter() {
-  margin-left: -15px;
-  margin-right: -15px;
-}
-
 .bt-promo-section {
-  margin-bottom: 32px;
-  padding-top: 16px;
+  margin-bottom: $spacing-lg;
+  padding-top: $spacing-md;
   .bt-promo-section__title {
     margin-bottom: 24px;
-    margin-top: 16px;
+    margin-top: $spacing-md;
   }
   .bt-product-item {
     a {
       display: block;
-      padding-left: 16px;
-      padding-right: 16px;
+      padding-left: $spacing-md;
+      padding-right: $spacing-md;
     }
   }
-  @media (max-width: 991.98px) {
+  @include media-breakpoint-down(md) {
     @include no-gutter();
+    margin-bottom: $spacing-md;
     .bt-promo-section__wrapper {
       @include display-scroll();
       .row {
@@ -33,13 +22,13 @@
       }
     }
     .bt-promo-section__title {
-      padding-left: 15px;
+      padding-left: 16px;
     }
   }
-  @media (max-width: 767.98px) {
+  @include media-breakpoint-down(sm) {
     .bt-promo-section__title {
       font-size: 20px;
-      margin-bottom: 8px;
+      margin-bottom: $spacing-sm;
     }
   }
 }

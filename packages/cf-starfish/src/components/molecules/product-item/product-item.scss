@@ -2,20 +2,47 @@
   border-radius: 5px;
   border-bottom: none;
   height: 306px;
-  padding-bottom: 16px;
-  margin-bottom: 16px;
+  padding-bottom: $spacing-md;
+  margin-bottom: $spacing-md;
   a {
     text-decoration: none;
-    color: #3e3e3f;
+    color: $text-color;
   }
-  @media (min-width: 992px) {
+  &:hover {
+    .bt-product-title__name {
+      color: $blue;
+    }
+  }
+  @include media-breakpoint-up(lg) {
     &:hover {
       -webkit-box-shadow: 0 0 0 1px rgba(16, 22, 26, 0.1), 0 1px 1px 0 rgba(16, 22, 26, 0.1);
       box-shadow: 0 0 0 1px rgba(16, 22, 26, 0.1), 0 1px 1px 0 rgba(16, 22, 26, 0.1);
     }
   }
+  .bt-product-title {
+    margin-bottom: 10px;
+  }
+  .bt-product-title__name {
+    @include text-overflow(16px , 2);
+  }
+  .bt-product-price__web {
+    margin: 0;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .bt-product-image {
+    img {
+      width: 160px;
+      height: 160px;
+      margin-top: $spacing-md;
+      margin-bottom: $spacing-md;
+    }
+  }
+  .bt-product-price {
+    height: 40px;
+  }
 }
-@media (max-width: 991.98px) {
+@include media-breakpoint-down(md) {
   .bt-promo-section {
     .bt-product-item {
       margin-bottom: 0;
@@ -25,6 +52,17 @@
       padding-bottom: 0;
       vertical-align: top;
       flex: none;
+      height: auto;
+    }
+  }
+  .bt-product-item {
+    .bt-product-image {
+      img {
+        width: 128px;
+        height: 128px;
+        margin-top: $spacing-sm;
+        margin-bottom: $spacing-sm;
+      }
     }
   }
 }

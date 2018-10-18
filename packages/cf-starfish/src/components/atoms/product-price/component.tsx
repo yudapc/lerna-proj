@@ -13,7 +13,7 @@ export class ProductPriceComponent extends React.Component<Iprops, any> {
         <p className="bt-typo-caption bt-product-price__discount">
           <del>{productPriceDiscount}</del>
         </p>
-        <p className="bt-typo-heading bt-product-price__web">{productPriceWeb}</p>
+        <p className="bt-typo-body bt-product-price__web">{productPriceWeb}</p>
       </div>
     );
   }
